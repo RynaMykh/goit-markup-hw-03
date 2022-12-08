@@ -11,6 +11,18 @@
             0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color:var(--primary-white-color);
     color: var(--primary-text-color);
@@ -25,18 +37,20 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
 /*Header*/
-.page-header {
-    padding: 32px 0;
-}
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    padding: 32px 0;
+
+    height: 80px;
 }
 
 .header-nav {
@@ -133,9 +147,12 @@ body {
 }
 
 .hero-title {
-    margin:0 0 40px;
+    margin: 0px auto 30px;
+    padding: 0;
 
     color: var(--primary-white-color);
+
+    max-width: 696px;
 
     font-weight: 900;
     font-size: 44px;
@@ -147,15 +164,16 @@ body {
 
 /*Button*/
 .button.hero {
-    padding: 10px 32px;
+    padding: 10px 24px;
     border-radius: 4px;
 
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    border: none;
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.88;
     font-family: inherit;
 
 }
@@ -167,6 +185,7 @@ body {
 
     background-color: var(--primary-gray-color);
     color: var(--title-text-color);
+    border: none;
 
     font-weight: 500;
     font-size: 16px;
@@ -181,6 +200,10 @@ body {
 }
 
 /*Features*/
+.features {
+    padding-bottom: 0;
+}
+
 .features {
     background-color: var(--primary-white-color);
 }
@@ -207,7 +230,8 @@ body {
 
 /*Section*/
 
-.areas {
+
+.areas-list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -242,8 +266,7 @@ body {
 .team-list {
     display: flex;
     flex-wrap: nowrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    gap: 30px;
     padding: 0;
 }
 
@@ -268,12 +291,9 @@ body {
     background-color: var(--primary-white-color);
 }
 
-.team-card-thumb {
-    display: block;
-}
 
 .team-card-content {
-    padding: 30px 0 30px 0;
+    padding: 30px 10px;
 }
 
 .team-card-title {
@@ -318,11 +338,11 @@ body {
     text-decoration: none;
 }
 
-.contacts-footer{
+.address-footer{
     padding: 0;
 }
 
-.contacts-footer .link {
+.address-footer .link {
     color: var(--secondary-text-color);
     text-decoration: none;
 }
@@ -331,6 +351,9 @@ body {
     font-style: normal
 }
 
+.address-footer-contact:not(:last-child) {
+    margin-bottom: 12px;
+}
 /*Portfolio*/
 
 .filtres {
